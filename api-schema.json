@@ -1,0 +1,214 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "nlw-journey",
+    "collectionId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+    "dateExported": "2024-07-14T23:31:35.568Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "33c5c416-d29c-4470-86ad-1941b67e64d8",
+            "name": "Trips",
+            "containerId": "",
+            "created": "2024-07-14T21:37:27.145Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "96bf1f6c-5c29-49eb-b81b-d389a7f716bb",
+            "name": "Activities",
+            "containerId": "",
+            "created": "2024-07-14T21:38:02.604Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "5eff59cd-6c03-4476-93d7-cd3966a13195",
+            "name": "Links",
+            "containerId": "",
+            "created": "2024-07-14T21:41:56.361Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "4b1f245e-292f-4da4-89a1-3cf1809f6782",
+            "name": "Participants",
+            "containerId": "",
+            "created": "2024-07-14T22:21:03.242Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "5ece23da-8920-4a35-bd17-37f3a1b1c8fc",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "33c5c416-d29c-4470-86ad-1941b67e64d8",
+            "name": "register trip",
+            "url": "http://localhost:3333/trips",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-13T00:32:18.984Z",
+            "modified": "2024-07-14T23:17:15.270Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  // \"destination\": \"Rio de Janeiro\",\n  \"starts_at\": \"2025-07-01T02:00:00\",\n  \"ends_at\": \"2025-07-10T05:00:00\",\n  \"owner_name\": \"Paulo falcão\",\n  \"owner_email\": \"paulofalcao@email.com\",\n  \"emails_to_invite\": [\n    \"paulofalcao@email.com\",\n    \"victoriasaraiva@email.com\"\n  ]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4dbc19c7-13a1-4a77-b101-1cb398ef8ab8",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "4b1f245e-292f-4da4-89a1-3cf1809f6782",
+            "name": "confirm participant",
+            "url": "http://localhost:3333/participants/2cea04b6-a41a-466b-b6f2-d221e7b250c3/confirm",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-07-14T20:28:14.869Z",
+            "modified": "2024-07-14T20:28:48.425Z",
+            "headers": []
+        },
+        {
+            "_id": "3e79d553-3af1-4437-b8b9-ed17e1b124e7",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "96bf1f6c-5c29-49eb-b81b-d389a7f716bb",
+            "name": "create activity",
+            "url": "http://localhost:3333/trips/ff18027c-d1ba-4d10-9ab2-a6e2c8bdd2a8/activities",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-14T21:15:54.537Z",
+            "modified": "2024-07-14T21:41:09.277Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Ir ao cristo redentor\",\n  \"occurs_at\": \"2025-07-08T02:00:00\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0c89403b-3e33-4f17-808b-5f5c8bfaf913",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "5eff59cd-6c03-4476-93d7-cd3966a13195",
+            "name": "create link",
+            "url": "http://localhost:3333/trips/ff18027c-d1ba-4d10-9ab2-a6e2c8bdd2a8/links",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-14T21:41:56.361Z",
+            "modified": "2024-07-14T21:43:14.590Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"airbnb\",\n  \"url\": \"http://airbnb.com/reserva\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bcbd93e1-bd2d-402f-a7df-d4b6193d750e",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "96bf1f6c-5c29-49eb-b81b-d389a7f716bb",
+            "name": "get activities",
+            "url": "http://localhost:3333/trips/ff18027c-d1ba-4d10-9ab2-a6e2c8bdd2a8/activities",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-07-14T21:41:15.091Z",
+            "modified": "2024-07-14T21:41:40.273Z",
+            "headers": []
+        },
+        {
+            "_id": "157d5e4f-0773-4713-a43a-7df39ffa040f",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "5eff59cd-6c03-4476-93d7-cd3966a13195",
+            "name": "get links",
+            "url": "http://localhost:3333/trips/ff18027c-d1ba-4d10-9ab2-a6e2c8bdd2a8/links",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-07-14T21:41:56.362Z",
+            "modified": "2024-07-14T22:22:16.966Z",
+            "headers": []
+        },
+        {
+            "_id": "f86d7de0-2684-4f65-96db-8a96b52f1dd9",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "4b1f245e-292f-4da4-89a1-3cf1809f6782",
+            "name": "get participants",
+            "url": "http://localhost:3333/trips/ff18027c-d1ba-4d10-9ab2-a6e2c8bdd2a8/participants",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-07-14T22:21:20.262Z",
+            "modified": "2024-07-14T22:22:23.691Z",
+            "headers": []
+        },
+        {
+            "_id": "c134d518-58a9-486a-aff2-5b1b3d2f49bc",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "33c5c416-d29c-4470-86ad-1941b67e64d8",
+            "name": "update trip",
+            "url": "http://localhost:3333/trips/ff18027c-d1ba-4d10-9ab2-a6e2c8bdd2a8",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-07-14T22:44:07.939Z",
+            "modified": "2024-07-14T22:45:04.311Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"destination\": \"Rio de Janeiro - RJ\",\n  \"starts_at\": \"2025-07-01T02:00:00\",\n  \"ends_at\": \"2025-07-10T05:00:00\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e09b2c77-a8d6-4483-8b76-102cdeb46eba",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "33c5c416-d29c-4470-86ad-1941b67e64d8",
+            "name": "confirm trip",
+            "url": "http://localhost:3333/trips/d2ea59c4-4631-40e9-afbb-7464a1fa562c/confirm",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-14T20:15:52.044Z",
+            "modified": "2024-07-14T20:17:01.384Z",
+            "headers": []
+        },
+        {
+            "_id": "4a6608cb-7c6e-41b6-a434-0af258ca30c2",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "4b1f245e-292f-4da4-89a1-3cf1809f6782",
+            "name": "create invite",
+            "url": "http://localhost:3333/trips/ff18027c-d1ba-4d10-9ab2-a6e2c8bdd2a8/invites",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-07-14T22:29:20.895Z",
+            "modified": "2024-07-14T22:29:56.453Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"invited@email.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a08dc741-afa9-4bce-a364-9ea915fe2bd5",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "33c5c416-d29c-4470-86ad-1941b67e64d8",
+            "name": "get trip details",
+            "url": "http://localhost:3333/trips/ff18027c-d1ba-4d10-9ab2-a6e2c8bdd2a8",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-14T22:48:10.001Z",
+            "modified": "2024-07-14T23:18:37.727Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"destination\": \"Rio de Janeiro - RJ\",\n  \"starts_at\": \"2025-07-01T02:00:00\",\n  \"ends_at\": \"2025-07-10T05:00:00\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c4c328ab-16e4-4cb7-9bb1-bb66cb7eeaa5",
+            "colId": "b2320f6a-37e8-46d5-945f-7475e683a70f",
+            "containerId": "4b1f245e-292f-4da4-89a1-3cf1809f6782",
+            "name": "get participant",
+            "url": "http://localhost:3333/participants/dc1483ef-92d2-4435-bbaa-527cf6be0493",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-07-14T22:55:18.577Z",
+            "modified": "2024-07-14T22:55:50.268Z",
+            "headers": []
+        }
+    ],
+    "ref": "7Bi-YRz7t7VvyK4PYgcrX2wYLvciFRFS0kJ8ikRChsuTNp0Bq-K1cOE7bzheydv0racW7hV3PFiLhhwBW9HB7Q"
+}
