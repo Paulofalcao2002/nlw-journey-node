@@ -26,7 +26,7 @@ export async function confirmParticipant(app: FastifyInstance) {
       }
 
       if (participant.is_confirmed) {
-        // return reply.redirect(`localhost:3000/trips/${participant.trip_id}`);
+        // return reply.redirect(`${env.API_BASE_URL}/trips/${participant.trip_id}`);
         return "Redirect to trip page, you are already confirmed";
       }
 
@@ -37,7 +37,7 @@ export async function confirmParticipant(app: FastifyInstance) {
         data: { is_confirmed: true },
       });
 
-      // return reply.redirect(`localhost:3000/trips/${participant.trip_id}`);
+      // return reply.redirect(`${env.API_BASE_URL}/trips/${participant.trip_id}`);
       return "Redirect to trip page, now confirmed";
     }
   );
